@@ -1,0 +1,97 @@
+/* WEB230 Final Project - Hangman Game */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  /* width: 100vw;
+   height: 100vh; */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  /* height: 100%; */
+  text-align: center;
+  font-size: 2rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1em 0;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+#letters div {
+  margin: 4px;
+  padding-top: 0.5em;
+  border: 1px solid gray;
+  color: darkgreen;
+  width: 2em;
+  height: 2em;
+  line-height: 0.9;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+}
+
+#letters div:hover {
+  background-color: palegreen;
+}
+
+#clue p {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 0.5em;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+/* 
+This class will grey out the letters as they are used. 
+Just add the class "used".
+*/
+#letters div.used {
+  background-color: lightgray;
+  opacity: 0.5;
+}
+
+section#image {
+  text-align: center;
+}
+
+/* 
+Display the message when the game is over. 
+Hide it at the beginning. 
+*/
+section#gameover {
+  text-align: center;
+  font-size: 1rem;
+  display: none;
+}
+
+section#gameover button {
+  margin-top: 4px;
+  padding: 5px;
+  border: 1px solid gray;
+  color: darkgreen;
+  width: 180px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* WEB230 Final Project Winter 2021 */
